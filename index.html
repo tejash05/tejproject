@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="register.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Plano</title>
+  </head>
+  <body>
+    <div class="hold">
+      <nav>
+        <div class="navleft">
+          <img src="assets/Screenshot (162).png" alt="logo.img" height="25px" />
+          <div class="logo">Planoo</div>
+        </div>
+        <div class="navmid">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="navright">
+          <button
+            type="button"
+            class="Register"
+            id="Register"
+            onclick="openPopup()"
+          >
+            Register
+          </button>
+        </div>
+      </nav>
+      <!-- register -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <form>
+            <p align="center"><strong>Register</strong></p>
+            <div class="form-element">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div class="form-element">
+              <label for="email">Email:</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-element">
+              <label for="mobile">Mobile No.:</label>
+              <input
+                type="text"
+                name="mobile"
+                id="mobile"
+                placeholder="enter mobile"
+              />
+            </div>
+            <div class="form-element">
+              <button id="register2">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="page1">
+        <div class="pag1left">
+          <p align="center">
+            Get ready to <strong>supercharge</strong> your goal- setting and
+            planning with AI Planner.
+          </p>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <button type="button" class="Register1">SEND</button><br />
+          <p1>
+            Boost your efficiency with our Productivity app! Get more done,
+            effortlessly.
+          </p1>
+        </div>
+        <div class="pag1right">
+                    <img
+            src="assets/5df24d6b250000330098dea9.jpeg"
+            alt=""
+            height="600px"
+            width="800px"
+          />
+        </div>
+      </div>
+      <div class="page2">
+        <div class="page2top">
+          <p align="center">
+            Say good bye to boring list,<br />shout out to the fresh style
+          </p>
+        </div>
+        <div class="page2down">
+          <div class="page2downleft">
+            <p align="center">Before</p>
+            <div class="work">
+              <input type="text" id="itemInput" placeholder="Enter Tasks" />
+              <button id="addItem">Add work</button>
+            </div>
+            <ul id="itemList"></ul>
+
+            <div class="tired" align="center" style="font-size: 20px">
+              Tired of corning across tasks with this plain old row style? That
+              boring preview just doesn't cut it!
+            </div>
+          </div>
+          <div class="page2downright">
+            <p align="center">After</p>
+            <div class="addwork">
+              <input
+                type="text"
+                name="add"
+                id="add"
+                placeholder="Enter tasks"
+              />
+              <button id="btn">Add Work</button>
+            </div>
+
+            <div class="element"></div>
+            <div class="time">
+              It's tirne to bring a touch of modernity ond creativity to your
+              user interface with card-style designs!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page3">
+        <div class="page3top">
+          <p align="center">
+            Awesome feature you'll like, <br />everything in a simple way
+          </p>
+        </div>
+        <div class="page3top-top">
+          <div class="page3top-topleft">
+            <h1>
+              Easily tracing your task,<br />
+              every day, every week,<br />
+              with ease
+            </h1>
+            <p>
+              Easily handle your daily tasks with the Top and Create <br />
+              Tasw feature. including a progress preview. So simple!
+            </p>
+          </div>
+          <div class="page3top-topright">
+            <div id="flip">
+              <strong>monday</strong>
+              <div id="panel">
+                <p>Welcome back,user</p>
+
+                <div class="task">
+                  102 Task completed, you are masterpiece
+                  <div class="slidecontainer">
+                    <input
+                      type="range"
+                      min="1"
+                      max="100"
+                      value="60"
+                      class="slider"
+                      id="myRange"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="flip1">
+              <strong>tuesday</strong>
+              <div id="pane2">
+                <p>Welcome back,user</p>
+                <div class="task">
+                  103 Task completed, you are masterpiece
+                  <div class="slidecontainer">
+                    <input
+                      type="range"
+                      min="1"
+                      max="100"
+                      value="60"
+                      class="slider"
+                      id="myRange"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="flip2">
+              <strong>wednesday</strong>
+              <div id="pane3">
+                <p>Welcome back,user</p>
+                <div class="task">
+                  104 Task completed, you are masterpiece
+                  <div class="slidecontainer">
+                    <input
+                      type="range"
+                      min="1"
+                      max="100"
+                      value="60"
+                      class="slider"
+                      id="myRange"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page3down">
+        <div class="page3downleft">
+          <h1 align="center" style="color: white">
+            Progress preview in a <br />
+            fun way, yes, it's fun
+          </h1>
+          <p align="center" style="color: white">
+            A task progress preview that is so enjoyable and <br />
+            attractive that you actually look forward to checking it.
+          </p>
+          <div class="loading"></div>
+          <div class="smile">😎</div>
+        </div>
+
+        <div class="page3downright">
+          <h1 align="center">
+            Effortlessly manage your <br />
+            task with the help by Al
+          </h1>
+          <p align="center">
+            Ill'pend less time on manual tasks and more tirne on important work.
+            automate all the tasks with Al.
+          </p>
+          <img
+            src="assets/leadspace.jpeg"
+            alt="AI image"
+            height="100px"
+            id="AI"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="text" align="center"><h1>How Planoo changed lives</h1></div>
+    <div class="x">
+      <div class="left">
+        <div class="xleft">
+          <p align="center">
+            This app is a game-changer for my daily task management. I
+            appreciate its efficiency. Now, my hikes are even more enjoyable!
+          </p>
+          <img
+            src="assets/Screenshot (162).png"
+            alt="logo.img"
+            height="25px"
+            style="margin-left: 104px"
+          />
+          <br />
+          <img
+            src="assets/twitter.png"
+            alt=""
+            height="35px"
+            style="margin-left: 105px"
+          />
+          <h4 align="center">user</h4>
+        </div>
+        <div class="xleft">
+          <p align="center">
+            I was skeptical at first, but this app surprised me. It's the
+            perfect companion for an economist like me. It helps me structure my
+            daily work.
+          </p>
+          <img
+            src="assets/Screenshot (162).png"
+            alt="logo.img"
+            height="25px"
+            style="margin-left: 104px"
+          />
+          <br />
+          <img
+            src="assets/twitter.png"
+            alt=""
+            height="35px"
+            style="margin-left: 105px"
+          />
+          <h4 align="center">user</h4>
+        </div>
+        <div class="xleft">
+          <p align="center">
+            live been using this app for months, and it's a must-have for my
+            business tasks. Plus, it frees up time for my beloved garden and
+            cricket matches.
+          </p>
+          <img
+            src="assets/Screenshot (162).png"
+            alt="logo.img"
+            height="25px"
+            style="margin-left: 104px"
+          />
+          <br />
+          <img
+            src="assets/twitter.png"
+            alt=""
+            height="35px"
+            style="margin-left: 105px"
+          />
+          <h4 align="center">user</h4>
+        </div>
+      </div>
+      <div class="right">
+        <div class="xright">
+          <p align="center">
+            This app is a true stress-buster. It helps me organize my daily
+            tasks, giving me more time for yoga and art. All the features is
+            working well. Awesome app. Highly recommend!
+          </p>
+          <img
+            src="assets/Screenshot (162).png"
+            alt="logo.img"
+            height="25px"
+            style="margin-left: 104px"
+          />
+          <br />
+          <img
+            src="assets/twitter.png"
+            alt=""
+            height="35px"
+            style="margin-left: 105px"
+          />
+          <h4 align="center">user</h4>
+        </div>
+        <div class="xright">
+          <p align="center">
+            This app has made my daily life a breeze. It's a great tool to plan
+            my cooking experiments and travel adventures. I really recommend to
+            download it!
+          </p>
+          <img
+            src="assets/Screenshot (162).png"
+            alt="logo.img"
+            height="25px"
+            style="margin-left: 104px"
+          />
+          <br />
+          <img
+            src="assets/twitter.png"
+            alt=""
+            height="35px"
+            style="margin-left: 105px"
+          />
+          <h4 align="center">user</h4>
+        </div>
+        <div class="xright">
+          <p align="center">
+            I have been using them for a year now. Everything is detailed and
+            well organized and, of course, damn beautiful.
+          </p>
+          <img
+            src="assets/Screenshot (162).png"
+            alt="logo.img"
+            height="25px"
+            style="margin-left: 104px"
+          />
+          <br />
+          <img
+            src="assets/twitter.png"
+            alt=""
+            height="35px"
+            style="margin-left: 105px"
+          />
+          <h4 align="center">user</h4>
+        </div>
+      </div>
+    </div>
+    <div class="new">
+      <div class="question">
+        <div class="questionleft">
+          <h1 align="center" style="margin: 145px">
+            Frequently Asked <br />
+            Questions
+          </h1>
+          <div class="mix">
+            <button id="primary">Have other questions -></button>
+            <div class="ques">
+              <h3 style="position: relative; left: 75px">
+                Ask what's your query
+              </h3>
+              <textarea name="" id="all" cols="30" rows="10"></textarea><br />
+              <button id="send">SEND</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="qusetionright" style="width: 400px">
+          <p id="q1">What is a productivity app with Al support? <font color="orange">+</font>
+            <div class="ans1">Todoist: Todoist is a popular task management app that uses AI to help users prioritize tasks, set deadlines, and organize their schedules efficiently. <br>
+  
+              Asana: Asana is another project management tool that incorporates AI to assist teams in planning and tracking their work. It provides features like automated task assignment, progress tracking, and predictive analysis. <br>
+              
+              Trello: Trello, while not heavily AI-driven, integrates AI capabilities through Power-Ups and third-party integrations. These can add features like data visualization, automation, and smart suggestions to enhance productivity.</div>
+          </p>
+          <p id="q2">Howk can Al help in-prove my productivity? <font color="orange">+</font>
+            <div class="ans2">Automation: AI can automate repetitive tasks, freeing up time for more complex and creative work. For example, AI-powered tools can automatically schedule meetings, organize emails, categorize documents, and handle routine customer inquiries.
+              <br>
+              Data Analysis: AI algorithms can analyze large datasets quickly and accurately, providing valuable insights that humans might overlook. By identifying patterns and trends, AI can help businesses make data-driven decisions more efficiently.
+              <br>
+              Personalization: AI can personalize user experiences based on individual preferences and behavior. This can improve productivity by delivering relevant content, recommendations, and suggestions tailored to each user's needs..</div>
+          </p>
+          <p id="q3">What tasks Can the Al in the app automate? <font color="orange">+</font>
+            <div class="ans3">Appointment Scheduling: AI-powered assistants can coordinate schedules, find suitable meeting times, send calendar invitations, and handle rescheduling requests.
+              <br>
+              Data Entry and Processing: AI can extract information from documents, forms, and images, eliminating the need for manual data entry and reducing human error.</div>
+          </p>
+  
+          <p id="q4">Can the app integrate with email and calendar apps? <font color="orange">+</font>
+            <div class="ans4">APIs: Many email and calendar services provide APIs (Application Programming Interfaces) that allow developers to integrate their applications with email and calendar functionality. For example, Google provides the Gmail API and Google Calendar API for integrating with Gmail and Google Calendar, respectively. <br>
+  
+              OAuth: OAuth (Open Authorization) is a standard protocol for authorization that allows third-party applications to access user data without exposing their credentials. By implementing OAuth, your application can request permission from users to access their email and calendar data.</div>
+          </p>
+          <p id="q5">How does the Al provide task recommendations? <font color="orange">+</font>
+            <div class="ans5">Pattern Recognition: AI algorithms can analyze patterns in a user's behavior, such as task completion history, frequency of task updates, and time spent on different tasks. By recognizing patterns, AI can predict which tasks are likely to be important or urgent for the user. <br>
+  
+              Machine Learning: Machine learning algorithms can be trained on historical task data to identify relationships between different tasks and user preferences. For example, a machine learning model can learn to predict task priorities based on features such as task title, description, due date, and assigned user.</div>
+          </p>
+          
+        </div>
+      </div>
+  
+    </div>
+    <div class="footdiv"></div>
+        <footer>
+      <div class="footleft">
+        <img src="assets/Screenshot__162_-removebg-preview.png" alt="logo-image">
+        <div class="logo" style="font-size: x-large;">Planoo</div>
+      </div>
+      <div class="footmid">
+       <ul>
+        <li><strong style="color: black;">solutions</strong></li>
+        <li>AI Support</li>
+        <li>To Do list</li>
+        <li>Simple Plan</li>
+       </ul>
+       <ul>
+        <li><strong style="color: black;">Services</strong></li>
+        <li>Features</li>
+        <li>About</li>
+        <li>Pricing</li>
+        <li>Blog</li>
+       </ul>
+       <ul>
+        <li><strong style="color: black;">Policy</strong></li>
+        <li>Privacy Policy</li>
+        <li>Cookie Policy</li>
+        <li>Acceptable Use Policy</li>
+       </ul>
+      </div>
+      <div class="footright">
+        <ul>
+          <li> <strong style="color: black;">Let's Talk</strong></li>
+          <li>hello@planoo.ai</li>
+          <li>Blok M Square jkt</li>
+          <li>(+91)9212XXXXXX</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- rights -->
+    <div class="Rights">
+      <div class="rights-left" style="width: max-content;">
+        <a href="https://www.facebook.com/profile.php?id=100051011556652" target="_blank"><img src="assets/facebook.png" alt="" srcset=""></a>
+        <a href="https://www.instagram.com/jhaankit499/" target="_blank"><img src="assets/instagram.png" alt=""></a>
+        <a href="https://github.com/ankitjha42" target="_blank"><img src="assets/github.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/ankit-jha-b44435259/" target="_blank"><img src="assets/linkedin.png" alt=""></a>
+      </div>
+      <div class="rights-right">All rights reserved &reg; Ankit Jha(2024)</div>
+
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
